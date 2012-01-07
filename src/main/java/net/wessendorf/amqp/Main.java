@@ -31,7 +31,7 @@ public class Main
       ApplicationContext context = new AnnotationConfigApplicationContext(RabbitConfiguration.class);
 
       // get our service class
-      // could use the @Named "" value as well.......
+      // could use the @Named "rabbitPublishService" value as well, but this would require a type-cast.......
       RabbitPublishService rps = context.getBean(RabbitPublishService.class);
 
       // launch it!
